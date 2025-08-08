@@ -1,0 +1,30 @@
+<div class="table-container">
+  <div class="disney-header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Disney%2B_Hotstar_logo.svg/1024px-Disney%2B_Hotstar_logo.svg.png" alt="Disney Logo" class="disney-logo" />
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Character Name</th>
+        <th>Type</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let character of displayedCharacters">
+        <td>{{ character._id }}</td>
+        <td>{{ character.name }}</td>
+        <td>{{ character.type }}</td>
+        <td>{{ character.typeValue }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="pagination">
+    <button (click)="goToPage(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
+    <span>Page {{ currentPage }} of {{ totalPages }}</span>
+    <button (click)="goToPage(currentPage + 1)" [disabled]="currentPage === totalPages">Next</button>
+  </div>
+</div>
