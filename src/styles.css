@@ -1,0 +1,56 @@
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 32px 0 0 0;
+	padding: 0;
+	min-height: 100vh;
+	font-family: 'Segoe UI', 'Arial', sans-serif;
+	background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+	color: #222;
+	transition: background 0.4s;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+	background: #e0eafc;
+}
+::-webkit-scrollbar-thumb {
+	background: #b0c4de;
+	border-radius: 8px;
+}
+
+/* Remove outline on buttons for a cleaner look */
+button:focus {
+	outline: none;
+}
+
+@media (max-width: 600px) {
+	html {
+		font-size: 14px;
+	}
+	body {
+		padding: 0;
+	}
+}
+/* Global Disney App Styles */
+body {
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	font-family: 'Segoe UI', 'Arial', sans-serif;
+	background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+	color: #222;
+}
+
+/* Remove outline on buttons for a cleaner look */
+button:focus {
+	outline: none;
+}
