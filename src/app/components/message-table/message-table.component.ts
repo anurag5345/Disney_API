@@ -37,6 +37,9 @@ export class MessageTableComponent implements OnInit {
         } else if (character.tvShows && character.tvShows.length > 0) {
           type = 'tvShows';
           typeValue = character.tvShows.join(', ');
+        } else {
+          type = 'N/A';
+          typeValue = 'N/A';
         }
         return { ...character, type, typeValue } as DisplayCharacter;
       });
