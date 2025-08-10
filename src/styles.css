@@ -1,4 +1,3 @@
-/* Navbar styles */
 .navbar {
 	width: 100vw;
 	background: #2226a0;
@@ -43,7 +42,6 @@ body {
 	transition: background 0.4s;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
 	width: 10px;
 	background: #e0eafc;
@@ -53,7 +51,6 @@ body {
 	border-radius: 8px;
 }
 
-/* Remove outline on buttons for a cleaner look */
 button:focus {
 	outline: none;
 }
@@ -66,7 +63,7 @@ button:focus {
 		padding: 0;
 	}
 }
-/* Global Disney App Styles */
+
 body {
 	margin: 0;
 	padding: 0;
@@ -76,7 +73,6 @@ body {
 	color: #222;
 }
 
-/* Remove outline on buttons for a cleaner look */
 button:focus {
 	outline: none;
 }
