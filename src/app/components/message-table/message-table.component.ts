@@ -38,8 +38,8 @@ export class MessageTableComponent implements OnInit {
           type = 'tvShows';
           typeValue = character.tvShows.join(', ');
         } else {
-          type = 'N/A';
-          typeValue = 'N/A';
+          type = '-';
+          typeValue = '-';
         }
         return { ...character, type, typeValue } as DisplayCharacter;
       });
