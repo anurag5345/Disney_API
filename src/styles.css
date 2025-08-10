@@ -1,3 +1,29 @@
+/* Navbar styles */
+.navbar {
+	width: 100vw;
+	background: #2226a0;
+	padding: 0.5rem 2rem;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	box-shadow: 0 2px 8px rgba(34, 38, 160, 0.08);
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+.navbar a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.1rem;
+	font-weight: 500;
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	transition: background 0.2s;
+}
+.navbar a.active,
+.navbar a:hover {
+	background: #3a41c6;
+}
 html {
 	box-sizing: border-box;
 	font-size: 16px;

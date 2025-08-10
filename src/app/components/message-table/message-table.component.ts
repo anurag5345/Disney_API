@@ -14,8 +14,12 @@ export class MessageTableComponent implements OnInit {
   characters: DisplayCharacter[] = [];
   displayedCharacters: DisplayCharacter[] = [];
   currentPage = 1;
-  itemsPerPage = 10;
+  itemsPerPage = 14;
   totalPages = 1;
+
+  get pageNumbers(): number[] {
+    return Array.from({ length: this.totalPages }, (_, i) => i + 1);
+  }
 
   constructor(private messageService: MessageService) {}
 

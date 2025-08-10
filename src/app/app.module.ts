@@ -7,10 +7,7 @@ import { MessageTableComponent } from './components/message-table/message-table.
 
 @NgModule({
   declarations: [AppComponent, MessageTableComponent],
-  imports: [
-    BrowserModule,
-    HttpClientModule, 
-  ],
+  imports: [BrowserModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

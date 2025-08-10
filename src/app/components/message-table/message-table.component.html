@@ -1,6 +1,11 @@
 <div class="table-container">
   <div class="disney-header">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Disney%2B_Hotstar_logo.svg/1024px-Disney%2B_Hotstar_logo.svg.png" alt="Disney Logo" class="disney-logo" />
+    <div class="disney-logo-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Disney%2B_Hotstar_logo.svg/1024px-Disney%2B_Hotstar_logo.svg.png" alt="Disney Logo" class="disney-logo" />
+    </div>
+    <div class="disney-header-center">
+      <h1>Disney Characters</h1>
+    </div>
   </div>
 
   <table>
@@ -24,7 +29,14 @@
 
   <div class="pagination">
     <button (click)="goToPage(currentPage - 1)" [disabled]="currentPage === 1">Previous</button>
-    <span>Page {{ currentPage }} of {{ totalPages }}</span>
+    <ng-container *ngFor="let page of pageNumbers">
+      <button
+        (click)="goToPage(page)"
+        [class.active-page]="page === currentPage"
+      >
+        {{ page }}
+      </button>
+    </ng-container>
     <button (click)="goToPage(currentPage + 1)" [disabled]="currentPage === totalPages">Next</button>
   </div>
 </div>
