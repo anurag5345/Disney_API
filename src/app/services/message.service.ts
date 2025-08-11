@@ -3,14 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { environment } from '../../environments/environment';
-
-export interface DisneyCharacter {
-  _id: number;
-  name: string;
-  films?: string[];
-  shortFilms?: string[];
-  tvShows?: string[];
-}
+import { DisneyCharacter } from '../models/disney-character.model';
 
 @Injectable({
   providedIn: 'root',

@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  MessageService,
-  DisneyCharacter,
-} from '../../services/message.service';
+import { MessageService } from '../../services/message.service';
+import { DisneyCharacter } from '../../models/disney-character.model';
 
 @Component({
   selector: 'app-message-table',
